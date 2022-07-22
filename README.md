@@ -1,24 +1,23 @@
-# README
+# READ ME
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Steps
 
-Things you may want to cover:
+1. Install gems <br>
+gem 'devise' <br>
+gem 'rolify'
 
-* Ruby version
+2. Install devise<br>
+rails generate devise:install
 
-* System dependencies
+3. Generate devise User model<br>
+rails generate devise User
 
-* Configuration
+4. Generate rolify user<br>
+rails g rolify Role User
 
-* Database creation
+5. Migration<br>
+bundle exec rake db:migrate
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* [Rolify documentation](https://github.com/RolifyCommunity/rolify)
+* [Assigning roles](https://github.com/RolifyCommunity/rolify#4-add-a-role-to-a-user)
+* [Role queries](https://github.com/RolifyCommunity/rolify#5-role-queries)
